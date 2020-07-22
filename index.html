@@ -1,8 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>
-
-    </title>
+    <title>Where You Wanna Eat </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
   </head>
+
+  <body>
+<!--Title of the page, subtitle and description-->
+    <div class="title"><h1>Here Goes The Title Of Our Page</h1></div>
+    <div class="description"> <h2>potential subtitle</h2>
+      <p id="descriptionParagraph">Here we can add a description of what the page does etc.</p>
+    </div>
+
+<!--4 different filters: Cook/Takeout, sweet/savory, time available, dietary restrictions-->
+    <div class="filters">
+
+      <div class="filter1">
+        <label for="cookOrTakeout">Cook/Takeout</label>
+        <select name="cookOrTakeout" id="cookOrTakeout">
+          <option value="cook">Cook</option>
+          <option value="takeout">Takeout</option>
+        </select>
+      </div>
+
+      <div class="filter2">
+        <label for="sweetOrSavory">Sweet/Savory</label>
+        <select name="sweetOrSavory" id="sweetOrSavory">
+          <option value="sweet">Sweet</option>
+          <option value="savory">Savory</option>
+        </select>
+      </div>
+
+      <div class="filter3">
+        <label for="timeAvailable">Time Available</label>
+        <select name="timeAvailable" id="timeAvailable">
+            <option value="15to30">15-30 min</option>
+            <option value="30to60">30-60 min</option>
+            <option value="1to2">1-2 hours</option>
+            <option value="morethan2">more than 2 hours</option>
+        </select>
+      </div>
+
+      <div class="filter4">
+        <div>Dietary Restrictions:
+          <div class="restriction1"><input id="noRestrictions" type="checkbox" name="noRestrictions" value="none" checked>
+           <label class="noRestrictionsLabel" for="noRestrictions"> None </label>
+          </div>
+          <div class="restriction2"><input id="vegetarian" type="checkbox" name="vegetarian" value="vegetarian">
+            <label class="vegetarianLabel" for="vegetarian"> Vegetarian </label>
+          </div>
+          <div class="restriction3"><input id="vegan" type="checkbox" name="vegan" value="vegan">
+            <label class="veganLabel" for="vegan"> Vegan </label>
+          </div>
+          <div class="restriction4"><input id="lactoseIntolerance" type="checkbox" name="lactoseIntolerance" value="laactoseIntolerance">
+            <label class="lactoseIntoleranceLabel" for="lactoseIntolerance"> Lactose Intolerance </label>
+          </div>
+          <div class="restriction5"><input id="nutAllergy" type="checkbox" name="nutAllergy" value="nutAllergy">
+            <label class="nutAllergyLabel" for="nutAllergy"> Nut Allergy </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+<!--here will be the pictures-->
+
+    <div class="imageContainers">
+      <div class="images"> Images go here</div>
+    </div>
+
+
+
+    <script>
+
+    </script>
+  </body>
+
 </html>
