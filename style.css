@@ -1,4 +1,75 @@
 body{
+  color: ;
+  font-size: large;
+
+  }
+
+  .descriptionAndFilterContainer {
+    background-image: url(https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    margin-left: ;
+    padding: ;
+    font-weight: bold;
+    font-size: large;
+
+  }
+
+
+  .title{
+    color: rgb(50, 212, 50);
+    text-shadow: white 2px 2px;
+    font-weight: bold ;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  h2{
+    color: black;
+    text-shadow: white 2px 2px;
+    font-weight: bold ;
+    font-size: normal;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  .description > p {
+    color: black;
+    text-shadow: white 2px 2px;
+    font-weight: bold;
+    font-size: ;
+    font-style: ;
+    margin: ;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  .filters{
+    color: black;
+    text-shadow: white 1px 1px;
+    font-weight: ;
+    font-size: ;
+    font-style: ;
+    margin: ;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  .imageContainers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: ;
+    grid-row: ;
+    grid-column-gap: ;
+  }
+body{
 
 }
 
