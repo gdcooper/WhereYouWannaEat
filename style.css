@@ -41,7 +41,7 @@ body{
 
   .description > p {
     color: black;
-    text-shadow: white 2px 2px;
+    text-shadow: white 2px 1px;
     font-weight: bold;
     font-size: ;
     font-style: ;
@@ -69,24 +69,3 @@ body{
     grid-row: ;
     grid-column-gap: ;
   }
-body{
-
-}
-
-
-
-.title{
-
-}
-
-.description > p {
-
-}
-
-.filters{
-
-}
-
-.imageContainers{
-
-}
