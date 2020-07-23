@@ -11,9 +11,14 @@ body{
     background-color: paleturquoise;
   }
 
+  img:hover{
+    opacity: 0.5;
+  }
+
   button{
     border: solid 1px blueviolet;
   }
+
 
   .descriptionAndFilterContainer {
     display: grid;
