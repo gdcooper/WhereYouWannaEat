@@ -4,22 +4,21 @@ body{
 
   }
 
-  img{
-    max-width: 100%;
-    max-height: auto;
-    border: none;
-    background-color: paleturquoise;
+  #submitButton{
+    padding: 10px 10px;
+    margin: 10px;
+    background-color: rgb(185, 230, 238);
+    border: 3px solid black ;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: bold;
   }
 
-  img:hover{
-    opacity: 0.5;
+  #submitButton:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
   }
-
-  button{
-    border: solid 1px blueviolet;
-  }
-
-
   .descriptionAndFilterContainer {
     display: grid;
     background-image: url(https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -32,7 +31,6 @@ body{
     font-size: large;
 
   }
-
 
   .title{
     color: rgb(50, 212, 50);
@@ -90,4 +88,19 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5rem;
     grid-auto-columns;: 30%,
+  }
+
+  img{
+    max-width: 100%;
+    max-height:  auto;
+    border: none;
+    background-color: paleturquoise;
+  }
+
+  img:hover{
+    opacity: 0.5;
+  }
+
+  button{
+    border: solid 1px blueviolet;
   }
