@@ -16,11 +16,80 @@
     <div class="description"> <h2>select a filter:</h2></div>
   </header>
 
-  <div id="navbar">
-    <a class="active" href="javascript:void(0)">Home</a>
-    <a href="javascript:void(0)">News</a>
-    <a href="javascript:void(0)">Contact</a>
+<!--nav bar-->
+  <div id="filterNavBar">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('vegetarian')"> Vegetarian</button>
+    <button class="btn" onclick="filterSelection('vegan')"> Vegan</button>
+    <button class="btn" onclick="filterSelection('gluten')"> Gluten-free</button>
+    <button class="btn" onclick="filterSelection('nut')"> Nut-free</button>
   </div>
+
+<!--items-->
+  <div class="filterContainer">
+    <div class="filterDiv gluten nut" id="beanFetaSalad">
+      <img src="https://reciperoulette.tv/public/assets/images/food.jpg"
+      alt="Warm Broad Bean and Feta Salad">
+      <div><a href="https://reciperoulette.tv/recipes/pulse-and-beans/warm-broad-bean-and-feta-salad-ingredients" target="_blank"></a></div>
+      <div>Warm Broad Bean and Feta Salad</div></div>
+    <div class="filterDiv vegetarian nut" id="macAndCheese">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Original_Mac_n_Cheese_.jpg/1200px-Original_Mac_n_Cheese_.jpg"
+      alt="Mac and Cheese">
+      <div><a href="https://www.allrecipes.com/recipe/12027/microwave-macaroni-and-cheese/" target="_blank"></a></div>
+      <div>Macaroni and Cheese</div></div>
+    <div class="filterDiv nut" id="redCurry">
+      <img src="https://kirbiecravings.com/wp-content/uploads/2018/01/cauliflower-thai-red-curry-221.jpg"
+      alt="Thai Red Curry with Vegetables">
+      <div><a href="https://cookieandkate.com/thai-red-curry-recipe/" target="_blank"></a></div>
+      <div>Thai Red Curry with Vegetables</div></div>
+    <div class="filterDiv vegetarian vegan nut" id="scallionPancakes">
+      <img src="http://cravingsinamsterdam.com/wp-content/uploads/2015/02/scallion-pancakes.jpg"
+      alt="Scallion Pancakes">
+      <div><a href="https://www.delish.com/cooking/recipe-ideas/a32337210/scallion-pancakes-recipe/" target="_blank"></a></div>
+      <div>Scallion Pancakes</div></div>
+    <div class="filterDiv vegetarian nut vegan gluten" id="chickpeaCurry">
+      <img src="http://www.theconsciousdietitian.com/wp-content/uploads/2014/02/caullichickpea22-700x525.jpg"
+      alt="Chickpea and Cauliflower Curry">
+      <div><a href="https://www.tasteofhome.com/recipes/roasted-curried-chickpeas-and-cauliflower/" target="_blank"></a></div>
+      <div>Chickpea Curry</div></div>
+    <div class="filterDiv vegetarian nut" id="parsnipGratin">
+      <img src="http://atelierchristine.com/wp-content/uploads/2012/11/holidaycooking-entertaining-thanksgiving-sidedish-rootvegetable-parsnip-gratin-gruyerechese-silviafountaine-feastingathome-glutenfree-vegetarian-comfortfood-01.jpg"
+      alt="Parsnip Gratin with Guyere and Thyme">
+      <div><a href="http://atelierchristine.com/archives/6902/recipe-box/parsnip-gratin-with-gruyere-and-thyme-by-silvia-fountaine" target="_blank"></a></div>
+      <div>Parsnip Gratin</div></div>
+
+</div>
+
+<script src="function.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--
       <div class="filters">
@@ -74,38 +143,6 @@
       <button type="submit" id="submitButton">Submit</button>
     </div>--> <!--closes filters-->
 
-  <div class="imageContainer images">
-    <button class="btn" id="beanFetaSalad">
-      <img src="https://reciperoulette.tv/public/assets/images/food.jpg"
-      alt="Warm Broad Bean and Feta Salad">
-      <div><a href="https://reciperoulette.tv/recipes/pulse-and-beans/warm-broad-bean-and-feta-salad-ingredients" target="_blank"></a></div>
-      <div>Warm Broad Bean and Feta Salad</div></button>
-    <button class="btn" id="macAndCheese">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Original_Mac_n_Cheese_.jpg/1200px-Original_Mac_n_Cheese_.jpg"
-      alt="Mac and Cheese">
-      <div><a href="https://www.allrecipes.com/recipe/12027/microwave-macaroni-and-cheese/" target="_blank"></a></div>
-      <div>Macaroni and Cheese</div></button>
-    <button class="btn" id="redCurry">
-      <img src="https://kirbiecravings.com/wp-content/uploads/2018/01/cauliflower-thai-red-curry-221.jpg"
-      alt="Thai Red Curry with Vegetables">
-      <div><a href="https://cookieandkate.com/thai-red-curry-recipe/" target="_blank"></a></div>
-      <div>Thai Red Curry with Vegetables</div></button>
-    <button class="btn" id="scallionPancakes">
-      <img src="http://cravingsinamsterdam.com/wp-content/uploads/2015/02/scallion-pancakes.jpg"
-      alt="Scallion Pancakes">
-      <div><a href="https://www.delish.com/cooking/recipe-ideas/a32337210/scallion-pancakes-recipe/" target="_blank"></a></div>
-      <div>Scallion Pancakes</div></button>
-    <button class="btn" id="chickpeaCurry">
-      <img src="http://www.theconsciousdietitian.com/wp-content/uploads/2014/02/caullichickpea22-700x525.jpg"
-      alt="Chickpea and Cauliflower Curry">
-      <div><a href="https://www.tasteofhome.com/recipes/roasted-curried-chickpeas-and-cauliflower/" target="_blank"></a></div>
-      <div>Chickpea Curry</div></button>
-    <button class="btn" id="parsnipGratin">
-      <img src="http://atelierchristine.com/wp-content/uploads/2012/11/holidaycooking-entertaining-thanksgiving-sidedish-rootvegetable-parsnip-gratin-gruyerechese-silviafountaine-feastingathome-glutenfree-vegetarian-comfortfood-01.jpg"
-      alt="Parsnip Gratin with Guyere and Thyme">
-      <div><a href="http://atelierchristine.com/archives/6902/recipe-box/parsnip-gratin-with-gruyere-and-thyme-by-silvia-fountaine" target="_blank"></a></div>
-      <div>Parsnip Gratin</div></button>
-
 <!--
     <button class="btn" id="Harira"><div><a href="https://www.delicious.com.au/recipes/harira-moroccan-lamb-tomato-lentil-soup/4e8ffa28-9925-48a5-9a7f-29e574e86ef1?current_section=recipes&r=recipes/collections/africanrecipes&c=8d75ad69-10d3-4df1-83c3-12645f16c716/the%20best%20african%20recipes" target="_blank"><img src="https://img.delicious.com.au/RKjnFS4u/w759-h506-cfill/del/2015/10/harira-moroccan-lamb-tomato-and-lentil-soup-14816-2.jpg" alt="Harira"></a></div></button>
     <button class="btn" id="frenchPizza"><div><a href="https://www.tasteofhome.com/recipes/french-bread-pizza/" target="_blank"><img src="https://www.epicurestable.com/wp-content/uploads/2016/08/french-bread-pizza.png" alt="French Bread Pizza"></a></div></button>
@@ -128,10 +165,3 @@
     <button class="btn" id="ramen"><div><a href="https://www.mashed.com/105406/easy-ways-upgrade-instant-ramen/" target="_blank"><img src="https://www.budgetbytes.com/wp-content/uploads/2015/12/6-Ways-to-Upgrade-Instant-Ramen-eat-2.jpg" alt="Instant Ramen"></a></div></button>
     <button class="btn" id="empty1"><div><a href="" target="_blank"><img src="" alt=""></a></div></button>
     <button class="btn" id="empty2"><div><a href="" target="_blank"><img src="" alt=""></a></div></button> -->
-  </div>
-
-  <script src="jstest.js"></script>
-
-</body>
-
-</html>
