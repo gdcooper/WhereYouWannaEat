@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Where You Wanna Eat </title>
+    <title>What You Wanna Eat </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-<!--whole Container class to add grid for the whole page-->
-  <div class="wholeContainer">
-  <div class="descriptionAndFilterContainer">
-    <div id="backgroundImage"></div>
-    <!--Title of the page, subtitle and description-->
-    <div class="title"><h1>Here Goes The Title Of Our Page</h1></div>
-    <div class="description"> <h2>potential subtitle</h2>
-      <p>Here we can add a description of what the page does etc.</p>
-    </div>
+<body>
 
-    <!--4 different filters: Cook/Takeout, sweet/savory, time available, dietary restrictions-->
-    <div class="filters">
+<!--Header for parallax-->
+  <header>
+    <div class="title"><h1>What You Wanna Eat?</h1></div>
+    <div class="description"> <h2>select a filter:</h2></div>
+  </header>
+
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="javascript:void(0)">News</a>
+    <a href="javascript:void(0)">Contact</a>
+  </div>
+
+    <!--
+      <div class="filters">
 
       <div class="filter1">
         <label for="cookOrTakeout">Cook/Takeout</label>
@@ -66,48 +70,68 @@
           </div>
         </div>
       </div>
-        <button type="submit" id="submitButton">Submit</button>
-    </div>
+
+      <button type="submit" id="submitButton">Submit</button>
+    </div>--> <!--closes filters-->
+
+  <div class="imageContainer images">
+    <button class="btn" id="beanFetaSalad">
+      <img src="https://reciperoulette.tv/public/assets/images/food.jpg"
+      alt="Warm Broad Bean and Feta Salad">
+      <div><a href="https://reciperoulette.tv/recipes/pulse-and-beans/warm-broad-bean-and-feta-salad-ingredients" target="_blank"></a></div>
+      <div>Warm Broad Bean and Feta Salad</div></button>
+    <button class="btn" id="macAndCheese">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Original_Mac_n_Cheese_.jpg/1200px-Original_Mac_n_Cheese_.jpg"
+      alt="Mac and Cheese">
+      <div><a href="https://www.allrecipes.com/recipe/12027/microwave-macaroni-and-cheese/" target="_blank"></a></div>
+      <div>Macaroni and Cheese</div></button>
+    <button class="btn" id="redCurry">
+      <img src="https://kirbiecravings.com/wp-content/uploads/2018/01/cauliflower-thai-red-curry-221.jpg"
+      alt="Thai Red Curry with Vegetables">
+      <div><a href="https://cookieandkate.com/thai-red-curry-recipe/" target="_blank"></a></div>
+      <div>Thai Red Curry with Vegetables</div></button>
+    <button class="btn" id="scallionPancakes">
+      <img src="http://cravingsinamsterdam.com/wp-content/uploads/2015/02/scallion-pancakes.jpg"
+      alt="Scallion Pancakes">
+      <div><a href="https://www.delish.com/cooking/recipe-ideas/a32337210/scallion-pancakes-recipe/" target="_blank"></a></div>
+      <div>Scallion Pancakes</div></button>
+    <button class="btn" id="chickpeaCurry">
+      <img src="http://www.theconsciousdietitian.com/wp-content/uploads/2014/02/caullichickpea22-700x525.jpg"
+      alt="Chickpea and Cauliflower Curry">
+      <div><a href="https://www.tasteofhome.com/recipes/roasted-curried-chickpeas-and-cauliflower/" target="_blank"></a></div>
+      <div>Chickpea Curry</div></button>
+    <button class="btn" id="parsnipGratin">
+      <img src="http://atelierchristine.com/wp-content/uploads/2012/11/holidaycooking-entertaining-thanksgiving-sidedish-rootvegetable-parsnip-gratin-gruyerechese-silviafountaine-feastingathome-glutenfree-vegetarian-comfortfood-01.jpg"
+      alt="Parsnip Gratin with Guyere and Thyme">
+      <div><a href="http://atelierchristine.com/archives/6902/recipe-box/parsnip-gratin-with-gruyere-and-thyme-by-silvia-fountaine" target="_blank"></a></div>
+      <div>Parsnip Gratin</div></button>
+
+<!--
+    <button class="btn" id="Harira"><div><a href="https://www.delicious.com.au/recipes/harira-moroccan-lamb-tomato-lentil-soup/4e8ffa28-9925-48a5-9a7f-29e574e86ef1?current_section=recipes&r=recipes/collections/africanrecipes&c=8d75ad69-10d3-4df1-83c3-12645f16c716/the%20best%20african%20recipes" target="_blank"><img src="https://img.delicious.com.au/RKjnFS4u/w759-h506-cfill/del/2015/10/harira-moroccan-lamb-tomato-and-lentil-soup-14816-2.jpg" alt="Harira"></a></div></button>
+    <button class="btn" id="frenchPizza"><div><a href="https://www.tasteofhome.com/recipes/french-bread-pizza/" target="_blank"><img src="https://www.epicurestable.com/wp-content/uploads/2016/08/french-bread-pizza.png" alt="French Bread Pizza"></a></div></button>
+    <button class="btn" id="sweetPotatoStew"><div><a href="https://www.olivemagazine.com/recipes/vegan/west-african-stew-with-sweet-potato-and-greens/" target="_blank"><img src="https://www.savorytooth.com/wp-content/uploads/2017/02/chicken-peanut-stew-sweet-potato-2.jpg" alt="West African Stew with Potato and Greens"></a></div></button>
+    <button class="btn" id="pbjSandwich"><div><a href="https://www.food.com/recipe/traditional-peanut-butter-and-jelly-243965" target="_blank"><img src="https://media.npr.org/assets/img/2017/03/23/gettyimages-110960130-3--2_wide-55d20e38f455477160877c3124af0f2ab22d9535.jpg?s=1400" alt="Peanut Butter Jelly Sandwich"></a></div></button>
+    <button class="btn" id="garlickSpaghetti"><div><a href="https://www.delish.com/cooking/recipe-ideas/a22537192/garlic-spaghetti-recipe/" target="_blank"><img src="https://d3cizcpymoenau.cloudfront.net/images/27964/SFS_garlicky_spaghetti_pine_nuts_lemon-31.jpg" alt="Garlicky Spaghetti"></a></div></button>
+    <button class="btn" id="salmon"><div><a href="https://www.delish.com/cooking/recipe-ideas/a23121561/creamy-lemon-garlic-salmon-recipe/" target="_blank"><img src="https://therecipecritic.com/wp-content/uploads/2017/10/pansearedsalmoninalemondillsaucehero-1-of-1-2.jpg" alt="salmon"></a></div></button>
+    <button class="btn" id="grilledCheese"><div><a href="https://www.delish.com/cooking/recipe-ideas/a19610233/how-to-make-best-grilled-cheese/" target="_blank"><img src="https://www.tasteofhome.com/wp-content/uploads/2017/11/shutterstock_645742051-1024x683.jpg" alt="Grilled Cheese"></a></div></button>
+    <button class="btn" id="pineappleSalmon"><div><a href="https://www.delish.com/cooking/recipe-ideas/a26728380/baked-pineapple-salmon-recipe/" target="_blank"><img src="https://cdn.copymethat.com/media/orig_baked_pineapple_salmon_20190319012015068712s85bb.jpg" alt="Baked Pineapple Salmon"></a></div></button>
+    <button class="btn" id="cornBread"><div><a href="https://www.delish.com/cooking/a23891306/reese-witherspoons-corn-bread-chili-pie-recipe/" target="_blank"><img src="https://hips.hearstapps.com/hmg-prod/images/reese-s-cornbread-chili-pie-1539873516.png" alt="Reese Witherspoon's Corn Bread Chilli Pie"></a></div></button>
+    <button class="btn" id="chickenFajitas"><div><a href="https://www.delish.com/cooking/recipe-ideas/a19665622/easy-chicken-fajitas-recipe/" target="_blank"><img src="https://www.jocooks.com/wp-content/uploads/2019/01/chicken-fajitas-1-8-500x500.jpg" alt="Chicken Fajitas"></a></div></button>
+    <button class="btn" id="omelet"><div><a href="https://germanfoods.org/recipes/farmers-omelet/" target="_blank"><img src="https://champetit.com.br/wp-content/uploads/2016/09/004-farmers-omelette.jpg" alt="Farmer's Omelette"></a></div></button>
+    <button class="btn" id="spatzle"><div><a href="https://www.allrecipes.com/recipe/260576/spatzle-aka-spaetzle/" target="_blank"><img src="https://img-aws.ehowcdn.com/default/ds-photo/getty/article/94/15/453735411.jpg" alt="Späzle"></a></div></button>
+    <button class="btn" id="beefPatties"><div><a href="https://www.yummly.com/recipe/Jamaican-beef-patties-299054" target="_blank"><img src="https://static01.nyt.com/images/2017/05/24/dining/24PATTY1/24PATTY1-master768.jpg" alt="Jamaican Beef Patties"></a></div></button>
+    <button class="btn" id="chickenRicePeas"><div><a href="https://www.whatdadcooked.com/recipe/jerk-chicken-with-rice-and-peas/" target="_blank"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F02b5f6c25e2aa2873abe2f423697d507c8f9fd1c" alt="Jerk Chicken with Rice and Peas"></a></div></button>
+    <button class="btn" id="goulash"><div><a href="http://www.slovakcooking.com/2009/recipes/goulash/" target="_blank"><img src="https://orogoldcosmetics.files.wordpress.com/2015/07/orogold-must-try-foods-of-europe-goulash-hungary.jpg" alt="Goulasch Soup"></a></div></button>
+    <button class="btn" id="dumplings"><div><a href="http://www.slovakcooking.com/2009/recipes/bryndzove-halusky/" target="_blank"><img src="https://i.pinimg.com/originals/da/bf/d9/dabfd952fca8cc5a64dc5e6b2572473b.jpg" alt="Potato Dumplings with Bryndza"></a></div></button>
+    <button class="btn" id="cornMelonSoup"><div><a href="http://recipes-recipe-food-cake1.blogspot.com/2008/05/corn-and-melon-soup.html" target="_blank"><img src="https://cdn-image.foodandwine.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/201407-xl-corn-soup-with-vadouvan.jpg?itok=7-6m-dYt" alt="Corn and Melon Soup"></a></div></button>
+    <button class="btn" id="zosui"><div><a href="https://www.justonecookbook.com/zosui-japanese-rice-soup/" target="_blank"><img src="https://www.reishunger.de/upload/478/10109/kimchi-zosui-japanische-reissuppe-mit-sushi-reis.jpg" alt="Zousi"></a></div></button>
+    <button class="btn" id="ramen"><div><a href="https://www.mashed.com/105406/easy-ways-upgrade-instant-ramen/" target="_blank"><img src="https://www.budgetbytes.com/wp-content/uploads/2015/12/6-Ways-to-Upgrade-Instant-Ramen-eat-2.jpg" alt="Instant Ramen"></a></div></button>
+    <button class="btn" id="empty1"><div><a href="" target="_blank"><img src="" alt=""></a></div></button>
+    <button class="btn" id="empty2"><div><a href="" target="_blank"><img src="" alt=""></a></div></button> -->
   </div>
 
-    <!--here will be the pictures, class of imageContainer to add sub grid for images-->
+  <script src="jstest.js"></script>
 
-    <div class="imageContainer images">
-      <button class="btn btn1" id="beanFetaSalad"><div><a href="https://reciperoulette.tv/recipes/pulse-and-beans/warm-broad-bean-and-feta-salad-ingredients" target="_blank"><img src="https://reciperoulette.tv/public/assets/images/food.jpg" alt="Warm Broad Bean and Feta Salad"></a></div></button>
-      <button class="btn btn2" id="macAndCheese"><div><a href="https://www.allrecipes.com/recipe/12027/microwave-macaroni-and-cheese/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Original_Mac_n_Cheese_.jpg/1200px-Original_Mac_n_Cheese_.jpg" alt="Mac and Cheese"></a></div></button>
-      <button class="btn btn3" id="redCurry"><div><a href="https://cookieandkate.com/thai-red-curry-recipe/" target="_blank"><img src="https://kirbiecravings.com/wp-content/uploads/2018/01/cauliflower-thai-red-curry-221.jpg" alt="Thai Red Curry with Vegetables"></a></div></button>
-      <button class="btn btn4" id="scallionPancakes"><div><a href="https://www.delish.com/cooking/recipe-ideas/a32337210/scallion-pancakes-recipe/" target="_blank"><img src="http://cravingsinamsterdam.com/wp-content/uploads/2015/02/scallion-pancakes.jpg" alt="Scallion Pancakes"></a></div></button>
-      <button class="btn btn5" id="chickpeaCurry"><div><a href="https://www.tasteofhome.com/recipes/roasted-curried-chickpeas-and-cauliflower/" target="_blank"><img src="http://www.theconsciousdietitian.com/wp-content/uploads/2014/02/caullichickpea22-700x525.jpg" alt="Chickpea and Cauliflower Curry"></a></div></button>
-      <button class="btn btn6" id="parsnipGratin"><div><a href="http://atelierchristine.com/archives/6902/recipe-box/parsnip-gratin-with-gruyere-and-thyme-by-silvia-fountaine" target="_blank"><img src="http://atelierchristine.com/wp-content/uploads/2012/11/holidaycooking-entertaining-thanksgiving-sidedish-rootvegetable-parsnip-gratin-gruyerechese-silviafountaine-feastingathome-glutenfree-vegetarian-comfortfood-01.jpg" alt="Parsnip Gratin with Guyere and Thyme"></a></div></button>
-      <button class="btn btn7" id="Harira"><div><a href="https://www.delicious.com.au/recipes/harira-moroccan-lamb-tomato-lentil-soup/4e8ffa28-9925-48a5-9a7f-29e574e86ef1?current_section=recipes&r=recipes/collections/africanrecipes&c=8d75ad69-10d3-4df1-83c3-12645f16c716/the%20best%20african%20recipes" target="_blank"><img src="https://img.delicious.com.au/RKjnFS4u/w759-h506-cfill/del/2015/10/harira-moroccan-lamb-tomato-and-lentil-soup-14816-2.jpg" alt="Harira"></a></div></button>
-      <button class="btn btn8" id="frenchPizza"><div><a href="https://www.tasteofhome.com/recipes/french-bread-pizza/" target="_blank"><img src="https://www.epicurestable.com/wp-content/uploads/2016/08/french-bread-pizza.png" alt="French Bread Pizza"></a></div></button>
-      <button class="btn btn9" id="sweetPotatoStew"><div><a href="https://www.olivemagazine.com/recipes/vegan/west-african-stew-with-sweet-potato-and-greens/" target="_blank"><img src="https://www.savorytooth.com/wp-content/uploads/2017/02/chicken-peanut-stew-sweet-potato-2.jpg" alt="West African Stew with Potato and Greens"></a></div></button>
-      <button class="btn btn10" id="pbjSandwich"><div><a href="https://www.food.com/recipe/traditional-peanut-butter-and-jelly-243965" target="_blank"><img src="https://media.npr.org/assets/img/2017/03/23/gettyimages-110960130-3--2_wide-55d20e38f455477160877c3124af0f2ab22d9535.jpg?s=1400" alt="Peanut Butter Jelly Sandwich"></a></div></button>
-      <button class="btn btn11" id="garlickSpaghetti"><div><a href="https://www.delish.com/cooking/recipe-ideas/a22537192/garlic-spaghetti-recipe/" target="_blank"><img src="https://d3cizcpymoenau.cloudfront.net/images/27964/SFS_garlicky_spaghetti_pine_nuts_lemon-31.jpg" alt="Garlicky Spaghetti"></a></div></button>
-      <button class="btn btn12" id="salmon"><div><a href="https://www.delish.com/cooking/recipe-ideas/a23121561/creamy-lemon-garlic-salmon-recipe/" target="_blank"><img src="https://therecipecritic.com/wp-content/uploads/2017/10/pansearedsalmoninalemondillsaucehero-1-of-1-2.jpg" alt="salmon"></a></div></button>
-      <button class="btn btn13" id="grilledCheese"><div><a href="https://www.delish.com/cooking/recipe-ideas/a19610233/how-to-make-best-grilled-cheese/" target="_blank"><img src="https://www.tasteofhome.com/wp-content/uploads/2017/11/shutterstock_645742051-1024x683.jpg" alt="Grilled Cheese"></a></div></button>
-      <button class="btn btn14" id="pineappleSalmon"><div><a href="https://www.delish.com/cooking/recipe-ideas/a26728380/baked-pineapple-salmon-recipe/" target="_blank"><img src="https://cdn.copymethat.com/media/orig_baked_pineapple_salmon_20190319012015068712s85bb.jpg" alt="Baked Pineapple Salmon"></a></div></button>
-      <button class="btn btn15" id="cornBread"><div><a href="https://www.delish.com/cooking/a23891306/reese-witherspoons-corn-bread-chili-pie-recipe/" target="_blank"><img src="https://hips.hearstapps.com/hmg-prod/images/reese-s-cornbread-chili-pie-1539873516.png" alt="Reese Witherspoon's Corn Bread Chilli Pie"></a></div></button>
-      <button class="btn btn16" id="chickenFajitas"><div><a href="https://www.delish.com/cooking/recipe-ideas/a19665622/easy-chicken-fajitas-recipe/" target="_blank"><img src="https://www.jocooks.com/wp-content/uploads/2019/01/chicken-fajitas-1-8-500x500.jpg" alt="Chicken Fajitas"></a></div></button>
-      <button class="btn btn17" id="omelet"><div><a href="https://germanfoods.org/recipes/farmers-omelet/" target="_blank"><img src="https://champetit.com.br/wp-content/uploads/2016/09/004-farmers-omelette.jpg" alt="Farmer's Omelette"></a></div></button>
-      <button class="btn btn18" id="spätzle"><div><a href="https://www.allrecipes.com/recipe/260576/spatzle-aka-spaetzle/" target="_blank"><img src="https://img-aws.ehowcdn.com/default/ds-photo/getty/article/94/15/453735411.jpg" alt="Späzle"></a></div></button>
-      <button class="btn btn19" id="beefPatties"><div><a href="https://www.yummly.com/recipe/Jamaican-beef-patties-299054" target="_blank"><img src="https://static01.nyt.com/images/2017/05/24/dining/24PATTY1/24PATTY1-master768.jpg" alt="Jamaican Beef Patties"></a></div></button>
-      <button class="btn btn20" id="chickenRicePeas"><div><a href="https://www.whatdadcooked.com/recipe/jerk-chicken-with-rice-and-peas/" target="_blank"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F02b5f6c25e2aa2873abe2f423697d507c8f9fd1c" alt="Jerk Chicken with Rice and Peas"></a></div></button>
-      <button class="btn btn21" id="goulash"><div><a href="http://www.slovakcooking.com/2009/recipes/goulash/" target="_blank"><img src="https://orogoldcosmetics.files.wordpress.com/2015/07/orogold-must-try-foods-of-europe-goulash-hungary.jpg" alt="Goulasch Soup"></a></div></button>
-      <button class="btn btn22" id="dumplings"><div><a href="http://www.slovakcooking.com/2009/recipes/bryndzove-halusky/" target="_blank"><img src="https://i.pinimg.com/originals/da/bf/d9/dabfd952fca8cc5a64dc5e6b2572473b.jpg" alt="Potato Dumplings with Bryndza"></a></div></button>
-      <button class="btn btn23" id="cornMelonSoup"><div><a href="http://recipes-recipe-food-cake1.blogspot.com/2008/05/corn-and-melon-soup.html" target="_blank"><img src="https://cdn-image.foodandwine.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/201407-xl-corn-soup-with-vadouvan.jpg?itok=7-6m-dYt" alt="Corn and Melon Soup"></a></div></button>
-      <button class="btn btn24" id="zosui"><div><a href="https://www.justonecookbook.com/zosui-japanese-rice-soup/" target="_blank"><img src="https://www.reishunger.de/upload/478/10109/kimchi-zosui-japanische-reissuppe-mit-sushi-reis.jpg" alt="Zousi"></a></div></button>
-      <button class="btn btn25" id="ramen"><div><a href="https://www.mashed.com/105406/easy-ways-upgrade-instant-ramen/" target="_blank"><img src="https://www.budgetbytes.com/wp-content/uploads/2015/12/6-Ways-to-Upgrade-Instant-Ramen-eat-2.jpg" alt="Instant Ramen"></a></div></button>
-      <button class="btn btn26" id=""><div><a href="" target="_blank"><img src="" alt=""></a></div></button>
-      <button class="btn btn27" id=""><div><a href="" target="_blank"><img src="" alt=""></a></div></button>
-    </div>
+</body>
 
-
-  </div>
-
-    <script>
-
-    </script>
-
-  </body>
 </html>
