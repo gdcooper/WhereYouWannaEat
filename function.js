@@ -1,96 +1,99 @@
-function allfunction() {
-  var food1 = document.getElementById("macAndCheese");
-  food1.style.display == "block" ? food1.style.display = "none" :
-food1.style.display = "block";
-var food2 = document.getElementById("redCurry");
-  food2.style.display == "block" ? food2.style.display = "none" :
-food2.style.display = "block";
-var food3 = document.getElementById("scallionPancakes");
-  food3.style.display == "block" ? food3.style.display = "none" :
-food3.style.display = "block";
-var food4 = document.getElementById("chickpeaCurry");
-  food4.style.display == "block" ? food4.style.display = "none" :
-food4.style.display = "block";
-var food5 = document.getElementById("beanFetaSalad");
-  food5.style.display == "block" ? food5.style.display = "none" :
-food5.style.display = "block";
-var food6 = document.getElementById("parsnipGratin");
-  food6.style.display == "block" ? food6.style.display = "none" :
-food6.style.display = "block";
-}
+document.getElementById("all").addEventListener("click", FunctionOne);
+function FunctionOne() {
+  document.createElement('');
+};
 
-function vegetarianfunction() {
-  var food1 = document.getElementById("beanFetaSalad");
-  food1.style.display == "block" ? food1.style.display = "none" :
-food1.style.display = "block";
-var food2 = document.getElementById("redCurry");
-  food2.style.display == "block" ? food2.style.display = "none" :
-food2.style.display = "block";
-}
+document.getElementById("vegetarian").addEventListener("click", FunctionTwo);
+function FunctionTwo() {
+  document.getElementById("beanFetaSalad").remove();
+  document.getElementById("redCurry").remove();
+};
 
-function veganfunction() {
-  var food1 = document.getElementById("macAndCheese");
-  food1.style.display == "block" ? food1.style.display = "none" :
-food1.style.display = "block";
-var food2 = document.getElementById("redCurry");
-  food2.style.display == "block" ? food2.style.display = "none" :
-food2.style.display = "block";
-var food3 = document.getElementById("parsnipGratin");
-  food3.style.display == "block" ? food3.style.display = "none" :
-food3.style.display = "block";
-}
+document.getElementById("vegan").addEventListener("click", FunctionThree);
+function FunctionThree() {
+  document.getElementById("macAndCheese").remove();
+  document.getElementById("redCurry").remove();
+  document.getElementById("parsnipGratin").remove();
+};
+
+document.getElementById("gluten").addEventListener("click", FunctionFour);
+function FunctionFour() {
+  document.getElementById("macAndCheese").remove();
+  document.getElementById("redCurry").remove();
+  document.getElementById("scallionPancakes").remove();
+  document.getElementById("scallionPancakes").remove();
+};
+
+document.getElementById("nut").addEventListener("click", FunctionFive);
+function FunctionFive() {
+  document.getElementById("beanFetaSalad").remove();
+  document.getElementById("macAndCheese").remove();
+  document.getElementById("redCurry").remove();
+  document.getElementById("scallionPancakes").remove();
+  document.getElementById("chickpeaCurry").remove();
+  document.getElementById("parsnipGratin").remove();
+};
 
 
-function glutenfunction() {
-  var food1 = document.getElementById("macAndCheese");
-  food1.style.display == "block" ? food1.style.display = "none" :
-food1.style.display = "block";
-var food2 = document.getElementById("redCurry");
-  food2.style.display == "block" ? food2.style.display = "none" :
-food2.style.display = "block";
-var food3 = document.getElementById("scallionPancakes");
-  food3.style.display == "block" ? food3.style.display = "none" :
-food3.style.display = "block";
-var food4 = document.getElementById("chickpeaCurry");
-  food4.style.display == "block" ? food4.style.display = "none" :
-food4.style.display = "block";
-}
+// use the toggle function but that's alos not really what we wanted
+// function allfunction() {
+//   var food1 = document.getElementById("macAndCheese");
+//   food1.style.display == "block" ? food1.style.display = "none" :
+// food1.style.display = "block";
+// var food2 = document.getElementById("redCurry");
+//   food2.style.display == "block" ? food2.style.display = "none" :
+// food2.style.display = "block";
+// var food3 = document.getElementById("scallionPancakes");
+//   food3.style.display == "block" ? food3.style.display = "none" :
+// food3.style.display = "block";
+// var food4 = document.getElementById("chickpeaCurry");
+//   food4.style.display == "block" ? food4.style.display = "none" :
+// food4.style.display = "block";
+// var food5 = document.getElementById("beanFetaSalad");
+//   food5.style.display == "block" ? food5.style.display = "none" :
+// food5.style.display = "block";
+// var food6 = document.getElementById("parsnipGratin");
+//   food6.style.display == "block" ? food6.style.display = "none" :
+// food6.style.display = "block";
+// }
 
-// document.getElementById("all").addEventListener("click", FunctionOne);
-// function FunctionOne() {
-//   document.createElement('');
-// };
+// function vegetarianfunction() {
+//   var food1 = document.getElementById("beanFetaSalad");
+//   food1.style.display == "block" ? food1.style.display = "none" :
+// food1.style.display = "block";
+// var food2 = document.getElementById("redCurry");
+//   food2.style.display == "block" ? food2.style.display = "none" :
+// food2.style.display = "block";
+// }
 
-// document.getElementById("vegetarian").addEventListener("click", FunctionTwo);
-// function FunctionTwo() {
-//   document.getElementById("beanFetaSalad").remove();
-//   document.getElementById("redCurry").remove();
-// };
+// function veganfunction() {
+//   var food1 = document.getElementById("macAndCheese");
+//   food1.style.display == "block" ? food1.style.display = "none" :
+// food1.style.display = "block";
+// var food2 = document.getElementById("redCurry");
+//   food2.style.display == "block" ? food2.style.display = "none" :
+// food2.style.display = "block";
+// var food3 = document.getElementById("parsnipGratin");
+//   food3.style.display == "block" ? food3.style.display = "none" :
+// food3.style.display = "block";
+// }
 
-// document.getElementById("vegan").addEventListener("click", FunctionThree);
-// function FunctionThree() {
-//   document.getElementById("macAndCheese").remove();
-//   document.getElementById("redCurry").remove();
-//   document.getElementById("parsnipGratin").remove();
-// };
 
-// document.getElementById("gluten").addEventListener("click", FunctionFour);
-// function FunctionFour() {
-//   document.getElementById("macAndCheese").remove();
-//   document.getElementById("redCurry").remove();
-//   document.getElementById("scallionPancakes").remove();
-//   document.getElementById("scallionPancakes").remove();
-// };
+// function glutenfunction() {
+//   var food1 = document.getElementById("macAndCheese");
+//   food1.style.display == "block" ? food1.style.display = "none" :
+// food1.style.display = "block";
+// var food2 = document.getElementById("redCurry");
+//   food2.style.display == "block" ? food2.style.display = "none" :
+// food2.style.display = "block";
+// var food3 = document.getElementById("scallionPancakes");
+//   food3.style.display == "block" ? food3.style.display = "none" :
+// food3.style.display = "block";
+// var food4 = document.getElementById("chickpeaCurry");
+//   food4.style.display == "block" ? food4.style.display = "none" :
+// food4.style.display = "block";
+// }
 
-// document.getElementById("nut").addEventListener("click", FunctionFive);
-// function FunctionFive() {
-//   document.getElementById("beanFetaSalad").remove();
-//   document.getElementById("macAndCheese").remove();
-//   document.getElementById("redCurry").remove();
-//   document.getElementById("scallionPancakes").remove();
-//   document.getElementById("chickpeaCurry").remove();
-//   document.getElementById("parsnipGratin").remove();
-// };
 
 
 // No clue how this works
