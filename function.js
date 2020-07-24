@@ -19,13 +19,6 @@ var food6 = document.getElementById("parsnipGratin");
 food6.style.display = "block";
 }
 
-function allfunction() {
-  var contentId = document.getElementById("content");
-  // Toggle
-  contentId.style.display == "block" ? contentId.style.display = "none" :
-contentId.style.display = "block";
-}
-
 function vegetarianfunction() {
   var food1 = document.getElementById("beanFetaSalad");
   food1.style.display == "block" ? food1.style.display = "none" :
