@@ -173,5 +173,75 @@ let data = [
     diet: "gluten"
     locale: "home"
     time: "10"
+  },
+  {
+    name: "Panera Bread"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  {
+    name: "Chipotle"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  [
+    name: "Starbucks"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  ],
+  {
+    name: "Cheesecake Factory"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  {
+    name: "Taco Bell"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  {
+    name: "McDonalds"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  {
+    name: "Panda Express"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  {
+    name: "Chick-fil-a"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  {
+    name: "In-n-Out Burger"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
+  },
+  {
+    name: "Domino's"
+    ingredients: "none"
+    diet: "all"
+    locale: "takeout"
+    time: "30"
   }
 ]
