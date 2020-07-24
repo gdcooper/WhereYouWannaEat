@@ -10,56 +10,53 @@
 
 <body>
 
-<!--Header for parallax-->
+<!--Header for parallax animation-->
   <header>
     <div class="title"><h1>What You Wanna Eat?</h1></div>
     <div class="description"> <h2>select a filter:</h2></div>
   </header>
 
-<!--nav bar-->
+<section class="wholeWrapper">
+<!--navigation bar with filter options-->
+
   <div id="filterNavBar">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('vegetarian')"> Vegetarian</button>
-    <button class="btn" onclick="filterSelection('vegan')"> Vegan</button>
-    <button class="btn" onclick="filterSelection('gluten')"> Gluten-free</button>
-    <button class="btn" onclick="filterSelection('nut')"> Nut-free</button>
+    <button class="btn active" id="all" onclick="allfunction()"> Show all</button>
+    <button class="btn"  id="vegetarian" onclick="vegetarianfunction()"> Vegetarian</button>
+    <button class="btn"  id="vegan" onclick="veganfunction()"> Vegan</button>
+    <button class="btn"  id="gluten" onclick="glutenfunction()"> Gluten-free</button>
+    <button class="btn"  id="nut" onclick="nutfunction()"> Nut-free</button>
   </div>
 
-<!--items-->
+  <!--items to filter-->
   <div class="filterContainer">
-    <div class="filterDiv gluten nut" id="beanFetaSalad">
-      <img src="https://reciperoulette.tv/public/assets/images/food.jpg"
-      alt="Warm Broad Bean and Feta Salad">
-      <div><a href="https://reciperoulette.tv/recipes/pulse-and-beans/warm-broad-bean-and-feta-salad-ingredients" target="_blank"></a></div>
+    <div class="filterDiv novegetarian novegan all nut nogluten" name="option[1]" id="beanFetaSalad">
+      <a href="https://reciperoulette.tv/recipes/pulse-and-beans/warm-broad-bean-and-feta-salad-ingredients" target="_blank">
+      <img src="https://reciperoulette.tv/public/assets/images/food.jpg" alt="Warm Broad Bean and Feta Salad"></a>
       <div>Warm Broad Bean and Feta Salad</div></div>
-    <div class="filterDiv vegetarian nut" id="macAndCheese">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Original_Mac_n_Cheese_.jpg/1200px-Original_Mac_n_Cheese_.jpg"
-      alt="Mac and Cheese">
-      <div><a href="https://www.allrecipes.com/recipe/12027/microwave-macaroni-and-cheese/" target="_blank"></a></div>
+    <div class="filterDiv  novegan gluten nut all " name="option[2]" id="macAndCheese">
+      <a href="https://www.allrecipes.com/recipe/12027/microwave-macaroni-and-cheese/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Original_Mac_n_Cheese_.jpg/1200px-Original_Mac_n_Cheese_.jpg" alt="Mac and Cheese"></a>
       <div>Macaroni and Cheese</div></div>
-    <div class="filterDiv nut" id="redCurry">
-      <img src="https://kirbiecravings.com/wp-content/uploads/2018/01/cauliflower-thai-red-curry-221.jpg"
-      alt="Thai Red Curry with Vegetables">
-      <div><a href="https://cookieandkate.com/thai-red-curry-recipe/" target="_blank"></a></div>
+    <div class="filterDiv novegetarian novegan nut gluten all" name="option[3]" id="redCurry">
+      <a href="https://cookieandkate.com/thai-red-curry-recipe/" target="_blank">
+        <img src="https://kirbiecravings.com/wp-content/uploads/2018/01/cauliflower-thai-red-curry-221.jpg" alt="Thai Red Curry with Vegetables"></a>
       <div>Thai Red Curry with Vegetables</div></div>
-    <div class="filterDiv vegetarian vegan nut" id="scallionPancakes">
-      <img src="http://cravingsinamsterdam.com/wp-content/uploads/2015/02/scallion-pancakes.jpg"
-      alt="Scallion Pancakes">
-      <div><a href="https://www.delish.com/cooking/recipe-ideas/a32337210/scallion-pancakes-recipe/" target="_blank"></a></div>
+    <div class="filterDiv nut  gluten all" name="option[4]" id="scallionPancakes">
+      <a href="https://www.delish.com/cooking/recipe-ideas/a32337210/scallion-pancakes-recipe/" target="_blank">
+      <img src="http://cravingsinamsterdam.com/wp-content/uploads/2015/02/scallion-pancakes.jpg" alt="Scallion Pancakes"></a>
       <div>Scallion Pancakes</div></div>
-    <div class="filterDiv vegetarian nut vegan gluten" id="chickpeaCurry">
-      <img src="http://www.theconsciousdietitian.com/wp-content/uploads/2014/02/caullichickpea22-700x525.jpg"
-      alt="Chickpea and Cauliflower Curry">
-      <div><a href="https://www.tasteofhome.com/recipes/roasted-curried-chickpeas-and-cauliflower/" target="_blank"></a></div>
+    <div class="filterDiv  nut all nogluten" name="option[5]" id="chickpeaCurry">
+      <a href="https://www.tasteofhome.com/recipes/roasted-curried-chickpeas-and-cauliflower/" target="_blank">
+        <img src="http://www.theconsciousdietitian.com/wp-content/uploads/2014/02/caullichickpea22-700x525.jpg" alt="Chickpea and Cauliflower Curry"></a>
       <div>Chickpea Curry</div></div>
-    <div class="filterDiv vegetarian nut" id="parsnipGratin">
-      <img src="http://atelierchristine.com/wp-content/uploads/2012/11/holidaycooking-entertaining-thanksgiving-sidedish-rootvegetable-parsnip-gratin-gruyerechese-silviafountaine-feastingathome-glutenfree-vegetarian-comfortfood-01.jpg"
-      alt="Parsnip Gratin with Guyere and Thyme">
-      <div><a href="http://atelierchristine.com/archives/6902/recipe-box/parsnip-gratin-with-gruyere-and-thyme-by-silvia-fountaine" target="_blank"></a></div>
+    <div class="filterDiv  novegan nut all gluten" name="option[6]" id="parsnipGratin">
+      <a href="http://atelierchristine.com/archives/6902/recipe-box/parsnip-gratin-with-gruyere-and-thyme-by-silvia-fountaine" target="_blank">
+        <img src="http://atelierchristine.com/wp-content/uploads/2012/11/holidaycooking-entertaining-thanksgiving-sidedish-rootvegetable-parsnip-gratin-gruyerechese-silviafountaine-feastingathome-glutenfree-vegetarian-comfortfood-01.jpg"
+      alt="Parsnip Gratin with Guyere and Thyme"></a>
       <div>Parsnip Gratin</div></div>
 
-</div>
-
+  </div>
+</section>
 <script src="function.js"></script>
 
 </body>
